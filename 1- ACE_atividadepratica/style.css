@@ -100,7 +100,7 @@ header nav.menu-desktop ul li {
 }
 
 .menu-mobile {
-    background-color: #000;
+    background-color: #091616;
     height: 100vh;
     position: fixed;
     top: 0;
@@ -438,8 +438,13 @@ footer .borda {
     /* CABEÇALHO */
     .menu-desktop,
     .btn-contato {
-        display: none;
-    }
+            display: block; /* Garante que o botão apareça no mobile */
+            text-align: center; /* Centraliza o botão no mobile */
+            margin: 20px auto; /* Adiciona espaçamento ao redor */
+        }
+   
+
+        
 
     /* TOPO DO SITE */
 
@@ -462,7 +467,7 @@ footer .borda {
 
     /* COLETA SELETIVA */
     section.projeto {
-        padding: 40px 8%;
+        padding: 30px 8%;
     }
 
     /* SOBRE */
@@ -520,8 +525,26 @@ footer .borda {
         display: block; /* Exibe o botão em telas menores */
     }
 
-    .menu-desktop,
-    .btn-contato {
-        display: none;
+    .menu-desktop {
+        display: none; /* Continua escondendo o menu-desktop */
     }
+
+    .btn-contato {
+        display: block; /* Mostra o botão no mobile */
+        text-align: center; /* Centraliza o botão */
+        margin: 20px auto; /* Adiciona espaçamento ao redor */
+    }
+
+    .btn-contato button {
+        padding: 10px 40px;
+        font-size: 16px;
+        font-weight: 600;
+        background-color: #4F9A70;
+        border: 0;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: .2s;
+    }
+    
 }
+
