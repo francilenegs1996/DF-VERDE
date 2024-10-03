@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- FIM GOOGLE FONTES -->
+    <!-- BOOTSTRAP ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- FIM BOOTSTRAP ICONS -->
+    <link rel="stylesheet" href="style.css">
+
+    <script src="menu.js" defer></script>
+
+    <title>DF+VERDE</title>
+</head>
+<body>
+    
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <a href="#">
+                    <img src="images/logo.png" alt="Logotipo DF+VERDE">
+                </a>
+            </div><!--logo-->
+
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a id="topo-do-site">Início</a></li>
+                    <li><a id="sobre">Pontos de coleta</a></li>
+                    <li><a id="coleta">Coleta seletiva</a></li>
+                    <li><a id="conscientize-se">Conscientize-se</a></li>
+                </ul>
+            </nav>
+            
+           
+            
+            <div class="btn-abrir-menu" id="btn-menu">
+                <i class="bi bi-list"></i>
+            </div>
+            
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar" id="btn-fechar"> <!-- ID adicionado aqui -->
+                    <i class="bi bi-x-lg"></i>
+                </div>
+            
+                <nav>
+                    <ul>
+                        <li><a id="topo-do-site-m">Início</a></li>
+                        <li><a id="sobre-m">Pontos de coleta</a></li>
+                        <li><a id="coleta-m">Coleta seletiva</a></li>
+                        <li><a id="conscientize-se-m">Conscientize-se</a></li>
+                    </ul>
+                </nav>
+            </div><!--menu-mobile-->
+            
+            <div class="overlay-menu" id="overlay-menu"></div>
+
+            </header>
+    <main>
+        <section id="topo" class="topo-do-site">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-topo-site">
+                        <h1>DISTRITO FEDERAL + VERDE, FAÇA PARTE VOCÊ TAMBÉM<span>!</span></h1>
+                        <p>Este projeto é fruto de uma atividade prática desenvolvida na faculdade, com o objetivo de conscientizar a população do Distrito Federal sobre a importância da sustentabilidade. Aqui, você encontrará informações sobre os principais pontos de coleta seletiva na nossa região, além de dicas valiosas para tornar a cidade mais verde e sustentável. Junte-se a nós nessa iniciativa!</p>
+
+                        <div class="btn-contato">
+                            <a href="#">
+                                <button>Conhecer pontos de coleta</button>
+                            </a>
+                        </div>
+                    </div><!--txt-topo-site-->
+
+                    <div class="img-topo-site">
+                        <img src="images/pessoa.png" alt="">
+                    </div><!--img-topo-site-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--topo-do-site-->
+
+       
+
+        <section id="sobreColeta" class="sobre"> <!--Pontos de coleta-->
+            <div class="interface">
+                <div class="flex">
+                    <div class="img-sobre">
+                        <img src="images/foto.png" alt="">
+                    </div><!--img-sobre-->
+
+                    <div class="txt-sobre">
+                        <h2>PONTOS DE COLETA:<span>DISTRITO FEDERAL</span></h2>
+                        <p>O Distrito Federal conta com nove pontos de coleta seletiva, estrategicamente localizados de acordo com a área de atuação das cooperativas. Esses pontos permitem que você faça a destinação correta de resíduos, contribuindo diretamente para a reciclagem e preservação ambiental. Confira as localidades e encontre o ponto mais próximo:</p>
+                        <ul>
+                            <li> Brazlândia</li>
+                            <li> Cruzeiro</li>
+                            <li> Lago Sul</li>
+                            <li> Lago Norte</li>
+                            <li> Jardim Botânico</li>
+                            <li> Paranoá</li>
+                            <li> Riacho Fundo I</li>
+                            <li> Riacho Fundo II</li>
+                            <li> São Sebastião</li>
+                          </ul>
+                 
+                           
+                        </div><!--btn-social-->
+                    </div><!--txt-sobre-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--sobre-->
+
+        <section id="coletaseletiva" class="coletaseletiva"> <!--Coleta seletiva-->
+            <div class="interface">
+                <h2 class="titulo">COLETA <span>SELETIVA</span></h2>
+                <div class="flex">
+                    <div class="coletaseletiva-box">
+                        <i class="bi bi-trash"></i>
+                        <h3>Separe os resíduos</h3>
+                        <p>Separe os materiais recicláveis dos não recicláveis, como papel, plástico e vidro.</p>
+                    </div><!--especialidades-box-->
+
+                    <div class="coletaseletiva-box">
+                        <i class="bi bi-water"></i>
+                        <h3>Limpe os recicláveis</h3>
+                        <p>Antes de descartar, lave bem as embalagens para evitar contaminação e mau cheiro.</p>
+                    </div><!--especialidades-box-->
+
+                    <div class="coletaseletiva-box">
+                        <i class="bi bi-map"></i>
+                        <h3>Leve ao ponto de coleta</h3>
+                        <p>Dirija-se ao ponto de coleta mais próximo para descartar corretamente os recicláveis.</p>
+                    </div><!--especialidades-box-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--especiliadades-->
+
+        <section id="conscientize" class="sobre conscientize">
+            <div class="interface">
+                <div class="flex">
+                    <div class="img-sobre">
+                        <img src="images/foto2.png" alt="">
+                    </div><!--img-sobre-->
+
+                    <div class="txt-conscientize">
+                        <h2>CONSCIENTIZE-SE:<span>PENSAMENTO VERDE</span></h2>
+                        <p>A fumaça das queimadas e a montanha de lixo nos lembram que a mudança começa com a responsabilidade de cada um de nós.</p>
+                        <h3>Como você pode ajudar?</h3> <br/>
+                        <ul>
+                            <li>
+                              <strong>Reduza o uso de plástico:</strong> Opte por sacolas reutilizáveis, evite produtos descartáveis e escolha embalagens sustentáveis. Cada pequena mudança pode diminuir significativamente a quantidade de plástico nos aterros.
+                            </li> <br/>
+                            <li>
+                              <strong>Pratique a compostagem:</strong> Separe os resíduos orgânicos e utilize-os para criar adubo natural em casa. A compostagem reduz a quantidade de lixo enviado aos aterros e enriquece o solo.
+                            </li> <br/>
+                            <li>
+                              <strong>Utilize transporte sustentável:</strong> Sempre que possível, utilize bicicletas, transporte público ou faça caminhadas. Essa prática não só reduz a poluição do ar, mas também contribui para um estilo de vida mais saudável.
+                            </li> <br/>
+                            <li>
+                              <strong>Participe de mutirões de limpeza:</strong> Envolva-se em ações comunitárias para limpar praças, parques e áreas públicas. Essas iniciativas ajudam a manter a cidade limpa e promovem a união da comunidade.
+                            </li> <br/>
+                            <li>
+                              <strong>Informe-se e compartilhe conhecimento:</strong> Procure aprender mais sobre sustentabilidade e compartilhe essas informações com amigos e familiares. A conscientização é um processo coletivo e cada conversa pode inspirar mudanças.
+                            </li>
+                          </ul>
+                        <p>Ao adotar essas práticas simples, você não apenas contribui para a proteção do meio ambiente, mas também incentiva outras pessoas a fazer o mesmo. A mudança começa com você! Juntos, podemos tornar o Distrito Federal um lugar mais verde e sustentável.</p>
+                        
+                        </div><!--btn-social-->
+                    </div><!--txt-sobre-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--sobre-->
+
+     
+     
+
+    </main>
+
+    <footer>
+        <div class="interface">
+            <div class="line-footer">
+                <div class="flex">
+                    <div class="logo-footer">
+                        <img src="images/logo.png" alt="Logotipo DF+VERDE">
+                    </div><!--logo-footer-->
+                </div><!--flex-->
+            </div><!--line-footer-->
+    
+            <div class="line-footer borda">
+                <p class="text-verde"><strong>Desenvolvido por Francilene Pinheiro</strong></p>
+                <p class="text-verde">Projeto ACE - Atividade Prática de Sustentabilidade</p> <br/>
+    
+                <p class="text-verde">Me siga nas redes sociais:</p> <br/>
+                <div class="btn-social">
+                    <a href="#"><button><i class="bi bi-instagram"></i></button></a>
+                    <a href="#"><button><i class="bi bi-youtube"></i></button></a>
+                    <a href="#"><button><i class="bi bi-linkedin"></i></button></a>
+                </div><!--btn-social-->
+            </div><!--line-footer-->
+        </div><!--interface-->
+    </footer>
+    
+    
+    
+    
+    
+
+    
+
+</body>
+</html>
