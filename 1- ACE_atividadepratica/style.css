@@ -20,16 +20,38 @@ body {
     display: flex;
 }
 
-.btn-contato button {
-    padding: 10px 40px;
-    font-size: 18px;
-    font-weight: 600;
-    background-color: #4F9A70;
-    border: 0;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: .2s;
-}
+/* Style do scrollbar (pra mim não esquecer kkk */
+
+body {
+    --sb-track-color: #232E33;
+    --sb-thumb-color: #4f9a70;
+    --sb-size: 14px;
+  }
+  
+  body::-webkit-scrollbar {
+    width: var(--sb-size);
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 24px;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 24px;
+  }
+  
+  @supports not selector(::-webkit-scrollbar) {
+    body {
+        scrollbar-color: var(--sb-thumb-color)
+                       var(--sb-track-color);
+    }
+  }
+  
+
+
+/* TÍTULOS */
 
 h2.titulo {
     color: #fff;
@@ -42,13 +64,44 @@ h2.titulo span {
 }
 
 
+/* BOTÕES */
+
 button:hover,
 form .btn-enviar input:hover {
     box-shadow: 0px 0px 8px #4F9A70;
     transform: scale(1.05);
 }
 
+.btn-social button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    text-decoration: #143836;
+    color: #143836;
+    background-color: #4F9A70;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
+
+
+.btn-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: #143836;
+    background-color: #4F9A70;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+
 /* ESTILO DO CABEÇALHO */
+
 header {
     padding: 40px 4%;
 }
@@ -169,6 +222,7 @@ header nav.menu-desktop ul li {
 
 
 /* ESTILO DO TOPO DO SITE */
+
 section.topo-do-site {
     padding: 40px 4%;
 }
@@ -210,7 +264,8 @@ section.topo-do-site .flex {
     }
 }
 
-/* ESTILO DAS ESPECIALIDADES */
+/* ESTILO DA COLETA SELETIVA  */
+
 section.coletaseletiva {
     padding: 40px 4%;
 }
@@ -223,6 +278,9 @@ section.coletaseletiva .flex {
     color: #fff;
     padding: 40px;
     border-radius: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #4F9A70;
     margin-top: 45px;
     transition: .2s;
 }
@@ -243,6 +301,7 @@ section.coletaseletiva .flex {
 }
 
 /* ESTILO DO SOBRE */
+
 section.sobre {
     padding: 80px 4%;
 }
@@ -272,19 +331,10 @@ section.sobre .flex {
     text-align: justify;
 }
 
-.btn-social button {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    border: none;
-    background-color: #4F9A70;
-    font-size: 22px;
-    cursor: pointer;
-    margin: 0 5px;
-    transition: .2s;
-}
+
 
 /* CONSCIENTIZE-SE */
+
 section.conscientize {
     padding: 80px 4%;
 }
@@ -314,19 +364,10 @@ section.conscientize .flex {
     text-align: justify;
 }
 
-.btn-social button {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    border: none;
-    background-color: #4F9A70;
-    font-size: 22px;
-    cursor: pointer;
-    margin: 0 5px;
-    transition: .2s;
-}
+
 
 /* ESTILO DO PROJETO */
+
 section.projeto {
     padding: 80px 4%;
     box-shadow: 0 0 40px 10px #ffffff1d;
@@ -377,6 +418,7 @@ section.projeto .flex {
 
 
 /* RODAPÉ */
+
 footer {
     background-color: #E4DEDA; /* Cor de fundo do rodapé */
     padding: 20px 0; /* Espaçamento vertical */
@@ -417,6 +459,7 @@ footer .borda {
 @media screen and (max-width: 1020px) {
 
     /* CLASSES GERAIS */
+
     .flex {
         flex-direction: column;
         margin-top: 20px;
@@ -436,6 +479,7 @@ footer .borda {
     }
 
     /* CABEÇALHO */
+
     .menu-desktop,
     .btn-contato {
             display: block; /* Garante que o botão apareça no mobile */
@@ -453,8 +497,10 @@ footer .borda {
     }
 
     section.topo-do-site {
-        padding: 20px 8%;
+        padding: 30px 8%;
         margin-bottom: -50px;
+        margin-top: -50px;
+
     }
 
     .topo-do-site h1 {
@@ -466,11 +512,14 @@ footer .borda {
     }
 
     /* COLETA SELETIVA */
+    
     section.projeto {
         padding: 30px 8%;
     }
 
+
     /* SOBRE */
+
     section.sobre {
         padding: 30px 8%;
         
@@ -487,16 +536,13 @@ footer .borda {
         
     }
     
-    
-    .btn-social{
-        text-align: center;
-    }
 
     .img-sobre img{
         width: 100%;
     }
 
     /* Projeto */
+
     section.projeto {
         padding: 80px 8%;
     }
@@ -539,12 +585,79 @@ footer .borda {
         padding: 10px 40px;
         font-size: 16px;
         font-weight: 600;
+        text-decoration: #143836;
+        color: #143836;
         background-color: #4F9A70;
         border: 0;
         border-radius: 10px;
         cursor: pointer;
         transition: .2s;
     }
+
     
+header {
+    padding: 30px 4%;
+}
+    
+
+/* Animação de entrada coleta seletiva  */
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(100px); /* Começa deslocada à direita */
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0); /* Finaliza na posição original */
+    }
+}
+
+/* Estilo inicial antes da animação ser ativada */
+.coletaseletiva-box {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: .2s;
+}
+
+.coletaseletiva-box.show {
+    animation: slideIn 0.5s ease-in-out forwards;
+}
+
+
+
+/* Scroll no mobile (obs: IOS pode não funcionar essa estilização) */
+
+@media (max-width: 768px) {
+    body {
+      --sb-track-color: #232E33;
+      --sb-thumb-color: #4f9a70;
+      --sb-size: 14px;
+    }
+  
+    /* Estilos para scrollbars em navegadores baseados em WebKit */
+    body::-webkit-scrollbar {
+      width: var(--sb-size);
+    }
+  
+    body::-webkit-scrollbar-track {
+      background: var(--sb-track-color);
+      border-radius: 24px;
+    }
+  
+    body::-webkit-scrollbar-thumb {
+      background: var(--sb-thumb-color);
+      border-radius: 24px;
+    }
+  
+    /* Fallback para navegadores que não suportam scrollbars customizados */
+    @supports not selector(::-webkit-scrollbar) {
+      body {
+        scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+      }
+    }
+  }
+
+
 }
 

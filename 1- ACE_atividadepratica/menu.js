@@ -67,3 +67,28 @@ overlay.addEventListener('click', fecharMenuMobile);
 
 // Fecha o menu quando o usuário clica no botão X
 btnFechar.addEventListener('click', fecharMenuMobile);
+
+
+
+
+
+
+// Seleciona todas as caixas da seção coletaseletiva (faz parte da animação coleta seletiva que está no CSS)
+
+const boxes = document.querySelectorAll('.coletaseletiva-box');
+
+// Função para ativar a animação quando o elemento entra na viewport
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show'); // Adiciona a classe 'show' quando entra na viewport
+        }
+    });
+}, {
+    threshold: 0.5 // Dispara quando 50% do elemento estiver visível
+});
+
+// Observa cada caixa
+boxes.forEach(box => {
+    observer.observe(box);
+});
