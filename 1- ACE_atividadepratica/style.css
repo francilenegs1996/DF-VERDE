@@ -9,6 +9,10 @@
 body {
     background-color: #143836;
     height: 100vh;
+    max-width: 100vw; 
+    overflow-x: hidden; 
+    margin: 0; 
+    padding: 0; 
 }
 
 .interface {
@@ -268,6 +272,7 @@ section.topo-do-site .flex {
 
 section.coletaseletiva {
     padding: 40px 4%;
+    
 }
 
 section.coletaseletiva .flex {
@@ -469,6 +474,10 @@ footer .borda {
         gap: 20px;
     }
 
+    section.coletaseletiva {
+        overflow:hidden;
+    }
+
     .topo-do-site .flex{
         flex-direction: column-reverse;
     }
@@ -600,20 +609,19 @@ header {
 }
     
 
-/* Animação de entrada coleta seletiva  */
+/* Animação de entrada coleta seletiva */
 
 @keyframes slideIn {
     0% {
         opacity: 0;
-        transform: translateX(100px); /* Começa deslocada à direita */
+        transform: translateX(100px);
     }
     100% {
         opacity: 1;
-        transform: translateX(0); /* Finaliza na posição original */
+        transform: translateX(0);
     }
 }
 
-/* Estilo inicial antes da animação ser ativada */
 .coletaseletiva-box {
     opacity: 0;
     transform: translateX(100px);
@@ -623,6 +631,8 @@ header {
 .coletaseletiva-box.show {
     animation: slideIn 0.5s ease-in-out forwards;
 }
+
+
 
 
 
